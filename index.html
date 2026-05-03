@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IELTS System</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  background: #f3f4f6;
+  color: #111;
+}
+
+.sidebar {
+  padding: 24px 18px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  overflow: auto;
+  background: #ffffff;
+}
+
+.sidebar-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 26px;
+}
+
+.folder {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.folder:hover {
+  background: #eef4ff;
+}
+
+.children {
+  margin-left: 20px;
+  display: none;
+}
+
+.children.open {
+  display: block;
+}
+
+.item {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  background: white;
+}
+
+.item:hover {
+  background: #eef4ff;
+  border-color: #7aa7ff;
+}
+
+.main {
+  padding: 36px 48px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.box {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+audio {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.line {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  background: white;
+  line-height: 1.45;
+}
+
+.line:hover {
+  background: #eef4ff;
+}
+
+.line.active {
+  background: #dfeaff;
+  border-color: #2563eb;
+}
+
+.time {
+  display: inline-block;
+  min-width: 60px;
+  color: #2563eb;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.empty {
+  color: #666;
+  font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-title">📚 Mục lục</div>
+  <div id="menu"></div>
+</div>
+
+<div class="main">
+  <h1 id="title">IELTS Listening Library</h1>
+
+  <div class="box">
+    <h2>Audio player</h2>
+    <audio id="player" controls></audio>
+  </div>
+
+  <div class="box">
+    <h2>Transcript</h2>
+    <div id="transcript">
+      <p class="empty">Chưa chọn bài nào.</p>
+    </div>
+  </div>
+</div>
+
+<script src="data/menu.js"></script>
+
+<script>
+const menuDiv = document.getElementById("menu");
+const player = document.getElementById("player");
+const transcriptDiv = document.getElementById("transcript");
+const title = document.getElementById("title");
+
+let currentData = null;
+
+function formatTime(s){
+  let m = Math.floor(s / 60);
+  let sec = Math.floor(s % 60);
+  return `${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+}
+
+function renderTree(nodes, parent){
+  nodes.forEach(node => {
+    if(node.type === "folder"){
+      let div = document.createElement("div");
+      div.className = "folder";
+      div.textContent = "📁 " + node.title;
+
+      let children = document.createElement("div");
+      children.className = "children";
+
+      div.onclick = () => children.classList.toggle("open");
+
+      parent.appendChild(div);
+      parent.appendChild(children);
+
+      renderTree(node.children || [], children);
+    }
+
+    if(node.type === "item"){
+      let div = document.createElement("div");
+      div.className = "item";
+      div.textContent = "🎧 " + node.title;
+
+      div.onclick = () => loadLesson(node.file);
+
+      parent.appendChild(div);
+    }
+  });
+}
+
+function loadLesson(file){
+  fetch(file)
+    .then(res => res.json())
+    .then(data => {
+      currentData = data;
+
+      title.textContent = data.title;
+      player.src = data.audio;
+      player.load();
+
+      renderTranscript(data.segments || []);
+    });
+}
+
+function renderTranscript(segments){
+  transcriptDiv.innerHTML = "";
+
+  if(!segments.length){
+    transcriptDiv.innerHTML = `<p class="empty">Bài này chưa có transcript.</p>`;
+    return;
+  }
+
+  segments.forEach((seg, i) => {
+    let div = document.createElement("div");
+    div.className = "line";
+
+    div.innerHTML = `
+      <span class="time">${formatTime(seg.start)}</span>
+      <span>${seg.text}</span>
+    `;
+
+    div.onclick = () => {
+      player.currentTime = seg.start;
+      player.play();
+    };
+
+    transcriptDiv.appendChild(div);
+  });
+}
+
+player.addEventListener("timeupdate", () => {
+  if(!currentData) return;
+
+  let t = player.currentTime;
+  let lines = document.querySelectorAll(".line");
+
+  currentData.segments.forEach((seg, i) => {
+    if(t >= seg.start && t < seg.end){
+      lines[i].classList.add("active");
+    } else {
+      lines[i].classList.remove("active");
+    }
+  });
+});
+
+renderTree(menu, menuDiv);
+</script>
+
+</body>
+</html>

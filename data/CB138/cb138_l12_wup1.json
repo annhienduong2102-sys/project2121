@@ -1,0 +1,24 @@
+{
+  "title": "CB138 - Lesson 12 - Warmup 1",
+  "audio": "audio/CB138/lesson-12/warmup-1.mp3",
+  "segments": [
+    {"start":0,"end":2,"text":"Track 4."},
+    {"start":2,"end":6,"text":"So, there's a great walking tour tomorrow morning."},
+    {"start":6,"end":9,"text":"Or tomorrow night, we could go on the cruise round the harbour."},
+    {"start":9,"end":10,"text":"What do you think, John?"},
+    {"start":10,"end":16,"text":"Well, we've got theatre tickets for tonight, so we'd be too tired for the walking tour in the morning."},
+    {"start":16,"end":18,"text":"But I don't fancy the cruise either."},
+    {"start":18,"end":19,"text":"Why not?"},
+    {"start":19,"end":20,"text":"It'll be fun."},
+    {"start":20,"end":24,"text":"Look, it's a dinner cruise and it's only $12 each."},
+    {"start":24,"end":28,"text":"I hate the sea, and I'll be sick with fear if the waves are big."},
+    {"start":28,"end":31,"text":"And dinner on a boat?"},
+    {"start":31,"end":32,"text":"I just couldn't."},
+    {"start":32,"end":34,"text":"But we'll be in the harbour."},
+    {"start":34,"end":35,"text":"Still."},
+    {"start":35,"end":37,"text":"Oh, what about this?"},
+    {"start":37,"end":38,"text":"There's a bus tour tomorrow evening."},
+    {"start":38,"end":42,"text":"It's only $5.50, and it goes all around the main tourist sites."},
+    {"start":42,"end":46,"text":"Yeah, that sounds okay, but I'd much rather..."}
+  ]
+}

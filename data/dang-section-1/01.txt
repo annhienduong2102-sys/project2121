@@ -1,0 +1,40 @@
+{
+  "title": "01. IELTS 15 Test 1 Section 3",
+  "audio": "https://drive.google.com/uc?export=download&id=1qaGdkIXzvIMFYujt8Nslx7KzIhYRSbSa",
+  "file": "data/lessons/ielts15_t1_s3.json",
+  "segments": [
+    {"start":0,"end":11,"text":"You will hear two psychology students discussing the effects of the order in which the children in a family are born."},
+    {"start":11,"end":46,"text":"First, you have some time to look at questions 21 to 26."},
+    
+    {"start":54,"end":58,"text":"Ed, how are you getting on with the reading for our presentation next week?"},
+    {"start":58,"end":62,"text":"Well, okay, Ruth, but there's so much of it."},
+    {"start":62,"end":67,"text":"I know. I hadn't realised birth order was such a popular area of research."},
+    {"start":67,"end":83,"text":"But the stuff on birth order and personality is mostly unreliable. From what I've been reading, a lot of the claims are just stereotypes."},
+    
+    {"start":83,"end":90,"text":"Okay, but that's an interesting point. We could start by outlining what previous research has shown."},
+    {"start":90,"end":97,"text":"There are studies going back over 100 years."},
+    {"start":97,"end":106,"text":"Yeah, so we could just run through some of the typical traits."},
+    
+    {"start":106,"end":118,"text":"Oldest children are generally less well-adjusted but are thought to be good at nurturing."},
+    {"start":118,"end":128,"text":"Middle children are easier to get on with and eager to please."},
+    
+    {"start":128,"end":145,"text":"Youngest children are supposed to be sociable and confident, but that's not always true."},
+    
+    {"start":145,"end":157,"text":"There have also been studies on twins, suggesting they may be shy in social situations."},
+    {"start":157,"end":170,"text":"Only children are often described as loners who expect attention."},
+    
+    {"start":170,"end":186,"text":"Children with much older siblings may grow up faster and become more independent."},
+    
+    {"start":265,"end":275,"text":"What was the problem with most of these studies?"},
+    {"start":275,"end":292,"text":"Data was often collected from only one sibling, which reduced reliability."},
+    
+    {"start":292,"end":305,"text":"Some studies found that intelligence scores decline slightly from oldest to youngest child."},
+    {"start":305,"end":318,"text":"But many didn't consider family size and socio-economic status."},
+    
+    {"start":318,"end":335,"text":"Oldest children benefit from teaching younger siblings, which improves their own learning."},
+    
+    {"start":335,"end":350,"text":"Sibling rivalry can also help develop confidence and resilience."},
+    
+    {"start":350,"end":370,"text":"Despite conflicts, siblings usually learn to coexist and develop social skills."}
+  ]
+}
