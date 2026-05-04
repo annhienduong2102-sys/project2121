@@ -103,7 +103,13 @@ const menu = [
 {
         type: "folder",
         title: "lesson-14",
-        children: []
+        children: [
+           {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l14_ex1.json"
+          },
+        ]
       },
 {
         type: "folder",
