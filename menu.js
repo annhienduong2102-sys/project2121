@@ -108,38 +108,204 @@ const menu = [
             type: "item",
             title: "ex-1",
             file: "data/CB138/cb138_l14_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l14_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l14_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l14_ex4.json"
+          },
+            {
+            type: "item",
+            title: "ex-5",
+            file: "data/CB138/cb138_l14_ex5.json"
           },
         ]
       },
 {
         type: "folder",
         title: "lesson-16",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l16_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l16_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l16_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l16_ex4.json"
+          },
+            {
+            type: "item",
+            title: "ex-5",
+            file: "data/CB138/cb138_l16_ex5.json"
+          },
+        ]
       },
 {
         type: "folder",
         title: "lesson-18",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l18_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l18_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l18_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l18_ex4.json"
+          },
+            {
+            type: "item",
+            title: "ex-5",
+            file: "data/CB138/cb138_l18_ex5.json"
+          },
+        ]
       },
 {
         type: "folder",
         title: "lesson-20",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l20_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l20_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3.1",
+            file: "data/CB138/cb138_l20_ex3.1.json"
+          },
+            {
+            type: "item",
+            title: "ex-3.2",
+            file: "data/CB138/cb138_l20_ex3.2.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l20_ex4.json"
+          },
+        ]
       },
 {
         type: "folder",
         title: "lesson-22",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l22_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l22_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l22_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l22_ex4.json"
+          },
+        ]
       },
 {
         type: "folder",
         title: "lesson-24",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l24_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l24_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l24_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l24_ex4.json"
+          },
+            {
+            type: "item",
+            title: "ex-5",
+            file: "data/CB138/cb138_l24_ex5.json"
+          },
+        ]
       },
 {
         type: "folder",
         title: "lesson-26",
-        children: []
+        children: [
+            {
+            type: "item",
+            title: "ex-1",
+            file: "data/CB138/cb138_l26_ex1.json"
+          },  
+          {
+            type: "item",
+            title: "ex-2",
+            file: "data/CB138/cb138_l26_ex2.json"
+          },
+          {
+            type: "item",
+            title: "ex-3",
+            file: "data/CB138/cb138_l26_ex3.json"
+          },
+            {
+            type: "item",
+            title: "ex-4",
+            file: "data/CB138/cb138_l26_ex4.json"
+          },
+        ]
       },
     ]
   },
