@@ -2,3 +2,74 @@
   "title": "CB138 - Lesson 16 - Exercise 4",
   "audio": "https://res.cloudinary.com/de4cyjbj1/video/upload/v1777907176/Exercise_4_uqtp4t.mp3",
   "segments": [
+    {"start":0,"end":1,"text":"Section 2."},
+    {"start":1,"end":8,"text":"You'll hear a talk between a host and a professor called Alison Downing about cocoa beans."},
+    {"start":8,"end":43,"text":"First, you have some time to look at questions 11 to 16."},
+    {"start":43,"end":51,"text":"Now listen carefully and answer questions 11 to 16."},
+
+    {"start":51,"end":54,"text":"Hello and welcome to today's talk."},
+    {"start":54,"end":58,"text":"Here with me is the famous botanist, Professor Alison Downing."},
+    {"start":58,"end":63,"text":"So, Alison, tell us something about cocoa beans."},
+
+    {"start":63,"end":75,"text":"Cocoa beans, also called cacao beans, are the primary constituent in making chocolate, grown in tropical areas in South and Central America, West Africa and Asia."},
+    {"start":75,"end":79,"text":"The cocoa tree is often raised on small, family-owned farms."},
+    {"start":79,"end":87,"text":"When the harvested pods are opened to expose the beans, the pulp and cocoa seeds are removed and the rind is discarded."},
+    {"start":87,"end":94,"text":"The pulp and seeds are then piled in heaps, placed in bins or laid out on grates for several days."},
+    {"start":94,"end":103,"text":"During this time, the seeds and pulp undergo a process called sweating, where the thick pulp liquefies as it ferments."},
+    {"start":103,"end":109,"text":"The fermented pulp trickles away, leaving cocoa seeds behind to be collected."},
+    {"start":109,"end":116,"text":"This is when the beans are harvested and then the bags holding them are ready to be transported."},
+
+    {"start":116,"end":121,"text":"But the most important step in processing the cocoa bean is cleaning it."},
+    {"start":121,"end":129,"text":"Once the beans are unloaded from the railroad cars, the packages are opened and then weighed by machines."},
+    {"start":129,"end":136,"text":"Then the pots are split and the seeds or beans are covered with a sweet white pulp or mucilage."},
+    {"start":136,"end":142,"text":"On arrival at the factory, the cocoa beans are sorted and put in a hopper to be cleaned more rigorously."},
+    {"start":142,"end":148,"text":"The wet beans are then transported to a facility so they can be fermented and dried."},
+    {"start":148,"end":154,"text":"They are fermented for four to seven days and must be mixed every two days."},
+    {"start":154,"end":160,"text":"They are dried for 5 to 14 days, depending on the climate conditions."},
+    {"start":160,"end":167,"text":"The fermented beans are dried by spreading them out over a large surface and constantly raking them."},
+    {"start":167,"end":171,"text":"Then the beans are ready to be roasted."},
+
+    {"start":171,"end":179,"text":"Now, roasting takes place at a high temperature and then the beans are boiled in a heated chamber."},
+    {"start":179,"end":184,"text":"During the roasting process, the beans will be expanded and cracked."},
+    {"start":184,"end":186,"text":"But prior to this,"},
+    {"start":186,"end":191,"text":"the beans are trodden and shuffled about using bare human feet."},
+    {"start":191,"end":209,"text":"During this process, red clay mixed with water is sprinkled over the beans to obtain a finer colour, polish and protection against moulds during shipment to factories in the United States, the Netherlands, the United Kingdom and other countries."},
+
+    {"start":209,"end":212,"text":"Now, back to what I was saying."},
+    {"start":212,"end":215,"text":"After the beans are cracked, they need to be cooled."},
+    {"start":215,"end":222,"text":"Then the roasted beans are sealed in pockets."},
+
+    {"start":222,"end":248,"text":"Before you hear the rest of the talk, you have some time to look at questions 17 to 20."},
+    {"start":248,"end":256,"text":"Now listen and answer questions 17 to 20."},
+
+    {"start":256,"end":259,"text":"Wow, that is not a simple process, is it?"},
+    {"start":259,"end":266,"text":"But someone told me that different roasting levels of coffee can lead to different kinds of flavours."},
+
+    {"start":266,"end":275,"text":"Yes, roasting coffee transforms the chemical and physical properties of green coffee beans into roasted coffee products."},
+    {"start":275,"end":283,"text":"The roasting process is what produces the characteristic flavor of coffee by causing the green coffee beans to change in taste."},
+    {"start":283,"end":301,"text":"Unroasted beans contain similar, if not higher levels of acids, protein, sugars and caffeine as those that have been roasted, but lack the taste of roasted coffee beans due to the Maillard and other chemical reactions that occur during roasting."},
+
+    {"start":301,"end":316,"text":"The vast majority of coffee is roasted commercially on a large scale, but small-scale commercial roasting has grown significantly with the trend toward single-origin coffees served at specialty shops."},
+    {"start":316,"end":326,"text":"Some coffee drinkers even roast coffee at home as a hobby in order to both experiment with the flavour profile of the beans and ensure the freshest possible roast."},
+
+    {"start":326,"end":332,"text":"So here I'm going to introduce some of these roasted coffee beans and their special flavours."},
+    {"start":332,"end":343,"text":"Now, the first crack is lighter bodied and has a higher acidity level with no obvious roast flavour and is popular for its special mild taste."},
+    {"start":343,"end":348,"text":"This level of roast is ideal for tasting the full original character of the coffee."},
+
+    {"start":348,"end":352,"text":"The green beans are raw, unroasted coffee beans."},
+    {"start":352,"end":358,"text":"They are strictly hard beans with a smoky flavour and are slightly acidic."},
+
+    {"start":358,"end":368,"text":"We've also got French roast, and the flavour that comes across in French roast coffee usually has more to do with the roasting process than the actual quality of the beans."},
+    {"start":368,"end":375,"text":"By the time the beans are dark enough to qualify as French, most of their original flavour has dissipated."},
+    {"start":375,"end":382,"text":"In its place come the flavours of caramelising sugar, bittersweet coffee and often a bit of chocolate."},
+
+    {"start":382,"end":392,"text":"And finally, espresso smoky, that is, coffee brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans."},
+    {"start":392,"end":402,"text":"Espresso is generally thicker than coffee brewed through other methods, has a higher concentration of suspended and dissolved solids, and has creamer on top."},
+    {"start":402,"end":410,"text":"As a result of the pressurized brewing process, the flavors and chemicals in a typical cup of espresso are very concentrated."},
+    {"start":410,"end":424,"text":"Espresso is also the base for other drinks, such as Caffe Latte, Cappuccino, Caffe Machato, Caffe Mocha, Flat White, or Caffe Americano."},
+
+    {"start":424,"end":427,"text":"That is the end of Section Two."},
+    {"start":427,"end":437,"text":"You now have half a minute to check your answers."},
+    {"start":437,"end":461,"text":"Now, turn to Section Three."}
+  ]
+}
