@@ -935,6 +935,12 @@ const menu = [
   {
     type: "folder",
     title: "dang-dac-biet",
-    children: []
+    children: [
+  {
+            type: "item",
+            title: "Atlantic Bluefin Tuna",
+            file: "data/dang-dac-biet/Atlantic Bluefin Tuna.json"
+          },   
+    ]
   }
 ];
