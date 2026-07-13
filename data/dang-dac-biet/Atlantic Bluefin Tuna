@@ -1,1 +1,231 @@
-
+{
+  "title": "Atlantic Bluefin Tuna",
+  "audio": "https://res.cloudinary.com/de4cyjbj1/video/upload/v1783926879/Meet_the_bluefin_tuna_the_toughest_fish_in_the_sea_-_Grantly_Galland_and_Raiana_McKinney_-_TED-Ed_youtube_g7leui.mp4",
+  "segments": [
+    {
+      "start": 6,
+      "end": 14,
+      "text": "What's as big as a polar bear, swallows its prey whole, and swims at 40 miles an hour?"
+    },
+    {
+      "start": 14,
+      "end": 16,
+      "text": "It's not a shark or a killer whale."
+    },
+    {
+      "start": 16,
+      "end": 23,
+      "text": "It's the Atlantic bluefin tuna, the largest and longest-lived of the 15 tuna species."
+    },
+    {
+      "start": 23,
+      "end": 30,
+      "text": "The Atlantic bluefin has a unique set of adaptations that make it one of the most dominant predators in the ocean."
+    },
+    {
+      "start": 30,
+      "end": 39,
+      "text": "It starts as a tiny hatchling in the Gulf of Mexico or the Mediterranean Sea, no bigger than a human eyelash."
+    },
+    {
+      "start": 39,
+      "end": 48,
+      "text": "Within its first year of life, it develops something known as regional endothermy, the ability to regulate its body temperature."
+    },
+    {
+      "start": 48,
+      "end": 53,
+      "text": "An Atlantic bluefin gets oxygen from cold ocean water using its gills."
+    },
+    {
+      "start": 53,
+      "end": 55,
+      "text": "This process cools its blood."
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "text": "Then, heat the tuna generates swimming and hunting warms the blood."
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "text": "In most fishes, this heat would be lost back out into the ocean through the gills."
+    },
+    {
+      "start": 65,
+      "end": 72,
+      "text": "But in the Atlantic bluefin, a mechanism called countercurrent exchange traps the heat."
+    },
+    {
+      "start": 72,
+      "end": 83,
+      "text": "Cold blood on its way to the large swimming muscles passes close to warm blood leaving those muscles in a specialized network of blood vessels known as a rete mirabile."
+    },
+    {
+      "start": 83,
+      "end": 87,
+      "text": "Here, the heat jumps to the cold blood and stays in the body."
+    },
+    {
+      "start": 87,
+      "end": 94,
+      "text": "This makes bluefin one of the few warm-blooded fishes, a huge advantage in the marine environment."
+    },
+    {
+      "start": 94,
+      "end": 101,
+      "text": "Cold-blooded animals, whose body temperature depends entirely on the environment, become sluggish in colder waters."
+    },
+    {
+      "start": 101,
+      "end": 110,
+      "text": "But a bluefin's ability to keep warm means it has sharper vision, can better process information, and can swim faster than its prey."
+    },
+    {
+      "start": 110,
+      "end": 115,
+      "text": "It thrives in cold, deep, subarctic water."
+    },
+    {
+      "start": 115,
+      "end": 128,
+      "text": "Thanks to their warm-bloodedness, their powerful muscles, and their streamlined torpedo shape, with fins that fold into grooves to reduce drag, bluefin tuna can reach speeds few other animals can match."
+    },
+    {
+      "start": 128,
+      "end": 141,
+      "text": "Their maximum speed of 40 mph is faster than that of a great white shark or orca whale, and even at their comfortable cruising speed, they can cross the Atlantic in a couple of months."
+    },
+    {
+      "start": 141,
+      "end": 145,
+      "text": "All this swimming requires a great deal of oxygen."
+    },
+    {
+      "start": 145,
+      "end": 148,
+      "text": "But the bluefin is adapted for this as well."
+    },
+    {
+      "start": 148,
+      "end": 156,
+      "text": "The faster it swims, the more water passes over its gills, and the more oxygen it can absorb from that water."
+    },
+    {
+      "start": 156,
+      "end": 161,
+      "text": "This need for a constant flow of water means the tuna must always remain on the move."
+    },
+    {
+      "start": 161,
+      "end": 167,
+      "text": "It also means bluefin cannot suck prey into their mouths the way most other fishes do."
+    },
+    {
+      "start": 167,
+      "end": 172,
+      "text": "Instead, they must chase down their prey with their mouths open."
+    },
+    {
+      "start": 172,
+      "end": 180,
+      "text": "They eat smaller prey than most predators their size, including squid, crustaceans, and smaller fish species like mackerel."
+    },
+    {
+      "start": 180,
+      "end": 185,
+      "text": "The bluefin's temperature-regulating ability doesn't just make it a superior hunter."
+    },
+    {
+      "start": 185,
+      "end": 188,
+      "text": "It gives it nearly unlimited range."
+    },
+    {
+      "start": 188,
+      "end": 199,
+      "text": "As soon as they are strong enough to swim against the current, Atlantic bluefin leave the warm waters of their spawning grounds and spend their lives hunting all over the Atlantic Ocean."
+    },
+    {
+      "start": 199,
+      "end": 211,
+      "text": "Tunas from both the Gulf of Mexico and the Mediterranean Sea frequent the same feeding grounds and range from Brazil and Texas to Iceland and Senegal and beyond."
+    },
+    {
+      "start": 211,
+      "end": 217,
+      "text": "But when the time comes to reproduce around age 10, they always return to their sea of origin."
+    },
+    {
+      "start": 217,
+      "end": 223,
+      "text": "Here, groups of males and females release millions of eggs and sperm into the water."
+    },
+    {
+      "start": 223,
+      "end": 229,
+      "text": "They'll migrate back and forth between feeding and spawning grounds annually for the rest of their lives."
+    },
+    {
+      "start": 229,
+      "end": 235,
+      "text": "Atlantic bluefin can live for over 40 years, growing all the while."
+    },
+    {
+      "start": 235,
+      "end": 240,
+      "text": "The largest specimens are tens of millions of times heavier than when they hatched."
+    },
+    {
+      "start": 240,
+      "end": 249,
+      "text": "The same huge size that makes bluefin tuna indomitable in the ocean has made them vulnerable to one predator in particular: us."
+    },
+    {
+      "start": 249,
+      "end": 253,
+      "text": "Humans have a long history of fishing Atlantic bluefin."
+    },
+    {
+      "start": 253,
+      "end": 256,
+      "text": "It's even stamped on ancient Greek coins."
+    },
+    {
+      "start": 256,
+      "end": 264,
+      "text": "But in recent decades, demand has skyrocketed as bluefin are hunted for sashimi, sushi, and tuna steaks."
+    },
+    {
+      "start": 264,
+      "end": 272,
+      "text": "An individual fish can sell for $10,000 or more, promoting overfishing and illegal fishing."
+    },
+    {
+      "start": 272,
+      "end": 277,
+      "text": "But if recent conservation efforts are redoubled and quotas are better enforced,"
+    },
+    {
+      "start": 277,
+      "end": 281,
+      "text": "bluefin populations can begin to recover."
+    },
+    {
+      "start": 281,
+      "end": 284,
+      "text": "So what happens when the oceans are overfished?"
+    },
+    {
+      "start": 284,
+      "end": 286,
+      "text": "Can marine life ever recover?"
+    },
+    {
+      "start": 286,
+      "end": 292,
+      "text": "Find out more about the dangers of overfishing and what we can do to stop it with this video."
+    }
+  ]
+}
