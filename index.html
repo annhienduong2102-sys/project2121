@@ -119,6 +119,14 @@ h1 {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
+/* Giữ Audio player luôn hiển thị khi cuộn trang */
+.audio-box {
+  position: sticky;
+  top: 16px;
+  z-index: 100;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+}
+
 audio {
   width: 100%;
   margin-top: 12px;
@@ -184,6 +192,12 @@ audio {
   h1 {
     font-size: 34px;
   }
+
+  /* Chừa khoảng trống cho nút menu trên điện thoại/tablet */
+  .audio-box {
+    top: 68px;
+    padding: 20px;
+  }
 }
 </style>
 </head>
@@ -200,7 +214,7 @@ audio {
 <div class="main">
   <h1 id="title">IELTS Listening Library</h1>
 
-  <div class="box">
+  <div class="box audio-box">
     <h2>Audio player</h2>
     <audio id="player" controls></audio>
   </div>
@@ -334,6 +348,3 @@ renderTree(menu, menuDiv);
 
 </body>
 </html>
-```
-
-Sau khi sửa trên GitHub → **Commit changes** → đợi Vercel deploy → `Ctrl + Shift + R`.
