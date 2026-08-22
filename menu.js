@@ -940,6 +940,11 @@ const menu = [
             title: "Atlantic Bluefin Tuna",
             file: "data/dang-dac-biet/Atlantic Bluefin Tuna.json"
           },   
+      {
+            type: "item",
+            title: "Can we create the perfect farm?",
+            file: "data/dang-dac-biet/2.json"
+          },   
     ]
   }
 ];
