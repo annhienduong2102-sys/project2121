@@ -945,6 +945,21 @@ const menu = [
             title: "Can we create the perfect farm?",
             file: "data/dang-dac-biet/2.json"
           },   
+      {
+            type: "item",
+            title: "3 tips on how to study effectively",
+            file: "data/dang-dac-biet/3.json"
+          },   
+      {
+            type: "item",
+            title: "4.",
+            file: "data/dang-dac-biet/4.json"
+          },   
+      {
+            type: "item",
+            title: "5.",
+            file: "data/dang-dac-biet/5.json"
+          },   
     ]
   }
 ];
