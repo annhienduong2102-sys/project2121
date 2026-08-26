@@ -109,6 +109,21 @@ body.sidebar-closed .main {
 h1 {
   font-size: 40px;
   margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Subtitle nằm ngay bên dưới title */
+#subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+/* Ẩn subtitle nếu bài không có subtitle */
+#subtitle:empty {
+  display: none;
 }
 
 .box {
@@ -227,6 +242,11 @@ audio {
     font-size: 34px;
   }
 
+  #subtitle {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+
   /* Chừa khoảng trống cho nút menu trên điện thoại/tablet */
   .audio-box {
     top: 68px;
@@ -251,164 +271,376 @@ audio {
 </div>
 
 <div class="main">
+
+  <!-- Title chính -->
   <h1 id="title">IELTS Listening Library</h1>
+
+  <!-- Subtitle -->
+  <p id="subtitle"></p>
 
   <div class="box audio-box">
     <h2>Audio player</h2>
+
     <audio id="player" controls></audio>
 
     <div class="seek-controls">
-      <button id="back3" class="seek-button" type="button" aria-label="Lùi 3 giây">
+
+      <button
+        id="back3"
+        class="seek-button"
+        type="button"
+        aria-label="Lùi 3 giây"
+      >
         ⏪ Lùi 3 giây
       </button>
 
-      <button id="forward3" class="seek-button" type="button" aria-label="Tua tới 3 giây">
+      <button
+        id="forward3"
+        class="seek-button"
+        type="button"
+        aria-label="Tua tới 3 giây"
+      >
         Tua 3 giây ⏩
       </button>
+
     </div>
   </div>
 
   <div class="box">
     <h2>Transcript</h2>
+
     <div id="transcript">
       <p class="empty">Chưa chọn bài nào.</p>
     </div>
   </div>
+
 </div>
 
 <script src="menu.js"></script>
 
 <script>
+
 const menuDiv = document.getElementById("menu");
+
 const player = document.getElementById("player");
+
 const transcriptDiv = document.getElementById("transcript");
+
 const title = document.getElementById("title");
+
+/* Lấy phần tử subtitle */
+const subtitle = document.getElementById("subtitle");
+
 const toggleSidebar = document.getElementById("toggleSidebar");
+
 const back3Button = document.getElementById("back3");
+
 const forward3Button = document.getElementById("forward3");
 
 let currentData = null;
 
+
+/* =========================
+   SIDEBAR
+========================= */
+
 toggleSidebar.onclick = () => {
+
   if (window.innerWidth <= 800) {
+
     document.body.classList.toggle("sidebar-open");
+
   } else {
+
     document.body.classList.toggle("sidebar-closed");
+
   }
+
 };
 
+
+/* =========================
+   FORMAT TIME
+========================= */
+
 function formatTime(s){
+
   let m = Math.floor(s / 60);
+
   let sec = Math.floor(s % 60);
+
   return `${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+
 }
+
+
+/* =========================
+   RENDER MENU
+========================= */
 
 function renderTree(nodes, parent){
+
   nodes.forEach(node => {
+
     if(node.type === "folder"){
+
       let div = document.createElement("div");
+
       div.className = "folder";
+
       div.textContent = "📁 " + node.title;
 
+
       let children = document.createElement("div");
+
       children.className = "children";
 
-      div.onclick = () => children.classList.toggle("open");
-
-      parent.appendChild(div);
-      parent.appendChild(children);
-
-      renderTree(node.children || [], children);
-    }
-
-    if(node.type === "item"){
-      let div = document.createElement("div");
-      div.className = "item";
-      div.textContent = "🎧 " + node.title;
 
       div.onclick = () => {
-        loadLesson(node.file);
 
-        if (window.innerWidth <= 800) {
-          document.body.classList.remove("sidebar-open");
-        }
+        children.classList.toggle("open");
+
       };
 
+
       parent.appendChild(div);
+
+      parent.appendChild(children);
+
+
+      renderTree(node.children || [], children);
+
     }
+
+
+    if(node.type === "item"){
+
+      let div = document.createElement("div");
+
+      div.className = "item";
+
+      div.textContent = "🎧 " + node.title;
+
+
+      div.onclick = () => {
+
+        loadLesson(node.file);
+
+
+        if (window.innerWidth <= 800) {
+
+          document.body.classList.remove("sidebar-open");
+
+        }
+
+      };
+
+
+      parent.appendChild(div);
+
+    }
+
   });
+
 }
+
+
+/* =========================
+   LOAD LESSON
+========================= */
 
 function loadLesson(file){
+
   fetch(file)
+
     .then(res => res.json())
+
     .then(data => {
+
       currentData = data;
 
-      title.textContent = data.title;
+
+      /* =========================
+         TITLE
+      ========================= */
+
+      title.textContent = data.title || "IELTS Listening Library";
+
+
+      /* =========================
+         SUBTITLE
+      ========================= */
+
+      subtitle.textContent = data.subtitle || "";
+
+
+      /* =========================
+         AUDIO
+      ========================= */
+
       player.src = data.audio;
+
       player.load();
 
+
+      /* =========================
+         TRANSCRIPT
+      ========================= */
+
       renderTranscript(data.segments || []);
+
+    })
+
+    .catch(error => {
+
+      console.error("Không thể tải bài:", error);
+
+      title.textContent = "Không thể tải bài";
+
+      subtitle.textContent = "";
+
+      transcriptDiv.innerHTML = `
+        <p class="empty">
+          Không thể tải dữ liệu bài học.
+        </p>
+      `;
+
     });
+
 }
+
+
+/* =========================
+   RENDER TRANSCRIPT
+========================= */
 
 function renderTranscript(segments){
+
   transcriptDiv.innerHTML = "";
 
+
   if(!segments.length){
-    transcriptDiv.innerHTML = `<p class="empty">Bài này chưa có transcript.</p>`;
-    return;
-  }
 
-  segments.forEach((seg, i) => {
-    let div = document.createElement("div");
-    div.className = "line";
-
-    div.innerHTML = `
-      <span class="time">${formatTime(seg.start)}</span>
-      <span>${seg.text}</span>
+    transcriptDiv.innerHTML = `
+      <p class="empty">
+        Bài này chưa có transcript.
+      </p>
     `;
 
+    return;
+
+  }
+
+
+  segments.forEach((seg, i) => {
+
+    let div = document.createElement("div");
+
+    div.className = "line";
+
+
+    div.innerHTML = `
+      <span class="time">
+        ${formatTime(seg.start)}
+      </span>
+
+      <span>
+        ${seg.text}
+      </span>
+    `;
+
+
     div.onclick = () => {
+
       player.currentTime = seg.start;
+
       player.play();
+
     };
 
+
     transcriptDiv.appendChild(div);
+
   });
+
 }
 
-/* Lùi đúng 3 giây, không vượt quá đầu bài */
+
+/* =========================
+   LÙI 3 GIÂY
+========================= */
+
 back3Button.addEventListener("click", () => {
-  player.currentTime = Math.max(0, player.currentTime - 3);
+
+  player.currentTime = Math.max(
+    0,
+    player.currentTime - 3
+  );
+
 });
 
-/* Tua đúng 3 giây, không vượt quá cuối bài */
+
+/* =========================
+   TUA 3 GIÂY
+========================= */
+
 forward3Button.addEventListener("click", () => {
+
   const duration = Number.isFinite(player.duration)
+
     ? player.duration
+
     : player.currentTime + 3;
 
-  player.currentTime = Math.min(duration, player.currentTime + 3);
+
+  player.currentTime = Math.min(
+
+    duration,
+
+    player.currentTime + 3
+
+  );
+
 });
+
+
+/* =========================
+   HIGHLIGHT TRANSCRIPT
+========================= */
 
 player.addEventListener("timeupdate", () => {
+
   if(!currentData) return;
 
+
   let t = player.currentTime;
+
   let lines = document.querySelectorAll(".line");
 
+
   currentData.segments.forEach((seg, i) => {
+
     if(t >= seg.start && t < seg.end){
+
       lines[i].classList.add("active");
+
     } else {
+
       lines[i].classList.remove("active");
+
     }
+
   });
+
 });
 
+
+/* =========================
+   LOAD MENU
+========================= */
+
 renderTree(menu, menuDiv);
+
 </script>
 
 </body>
