@@ -957,9 +957,47 @@ const menu = [
           },   
       {
             type: "item",
-            title: "5.",
+            title: "What yoga does your body and brain",
             file: "data/dang-dac-biet/5.json"
+          },  
+      {
+            type: "item",
+            title: "What_staying_up_all_night_does_to_your_brain",
+            file: "data/dang-dac-biet/6.json"
           },   
+      {
+            type: "item",
+            title: " How_the_food_you_eat_affects_your_brain",
+            file: "data/dang-dac-biet/7.json"
+          },   
+      {
+            type: "item",
+            title: "How_sugar_affects_the_brain",
+            file: "data/dang-dac-biet/8.json"
+      {
+            type: "item",
+            title: "How_stress_affects_your_brain_",
+            file: "data/dang-dac-biet/9.json"
+          },
+        {
+            type: "item",
+            title: "Does_stress_affect_your_memory",
+            file: "data/dang-dac-biet/10.json"
+      {
+            type: "item",
+            title: "The_benefits_of_a_good_night_s_sleep",
+            file: "data/dang-dac-biet/11.json"
+          },   
+      {
+            type: "item",
+            title: " One_of_the_world_s_oldest_condiments_",
+            file: "data/dang-dac-biet/12.json"
+          },   
+      {
+            type: "item",
+            title: "Underwater_farms_vs._climate_change_-_Ayana_Elizabeth_Johnson_and_Megan_Davis",
+            file: "data/dang-dac-biet/13.json"
+          }
     ]
   }
 ];
