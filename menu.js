@@ -974,6 +974,7 @@ const menu = [
             type: "item",
             title: "How_sugar_affects_the_brain",
             file: "data/dang-dac-biet/8.json"
+      },
       {
             type: "item",
             title: "How_stress_affects_your_brain_",
