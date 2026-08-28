@@ -983,6 +983,7 @@ const menu = [
             type: "item",
             title: "Does_stress_affect_your_memory",
             file: "data/dang-dac-biet/10.json"
+      },
       {
             type: "item",
             title: "The_benefits_of_a_good_night_s_sleep",
@@ -997,7 +998,7 @@ const menu = [
             type: "item",
             title: "Underwater_farms_vs._climate_change_-_Ayana_Elizabeth_Johnson_and_Megan_Davis",
             file: "data/dang-dac-biet/13.json"
-          }
+          },
     ]
   }
 ];
