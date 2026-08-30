@@ -1000,6 +1000,11 @@ const menu = [
             title: "Underwater_farms_vs._climate_change_-_Ayana_Elizabeth_Johnson_and_Megan_Davis",
             file: "data/dang-dac-biet/13.json"
           },
+      {
+            type: "item",
+            title: "Red gold The world's most expensive spice",
+            file: "data/dang-dac-biet/14.json"
+          },
     ]
   }
 ];
